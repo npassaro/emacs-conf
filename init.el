@@ -8,26 +8,28 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  ;;'(ansi-color-names-vector ["#242424" "#e5786d" "#95e454" "#cae682" "#8ac6f2" "#333366" "#ccaa8f" "#f6f3e8"])
-;; '(custom-enabled-themes (quote (wheatgrass)))
-
 )
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+(set-face-attribute 'default nil :height 100)
  )
 
+(setq-default truncate-lines nil)
+ ;; Do not use tabs for indentation
+(setq-default indent-tabs-mode nil)
+(menu-bar-mode t)
 ;; Enable copy and pasting from clipboard
  (setq x-select-enable-clipboard t)
 
 ;; Rails casts theme
-(require 'color-theme)
-(color-theme-initialize)
-(load-file "~/.emacs.d/site-lisp/themes/color-theme-railscasts.el")
-(color-theme-railscasts)
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
+(load-theme 'railscasts t)
 
- ;; Auto-complete configuration
+
+;; Auto-complete configuration
 (require 'auto-complete-config)
  (add-to-list 'ac-dictionary-directories "~/.emacs.d/.cask/24.3.50.1/elpa/auto-complete-20130724.1750/dict")
  (ac-config-default)
