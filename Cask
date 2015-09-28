@@ -1,6 +1,7 @@
 (source gnu)
 (source melpa)
 
+;;(package-file "cask.el")
 (depends-on "bind-key")
 (depends-on "cask")
 (depends-on "dash")
@@ -45,3 +46,7 @@
 (depends-on "ggtags")
 (depends-on "js2-mode")
 (depends-on "js2-refactor")
+(depends-on "markdown-mode")
+(depends-on "xclip")
+(depends-on "whitespace")
+(depends-on "coffee-mode")
