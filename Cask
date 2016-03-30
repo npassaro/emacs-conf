@@ -50,3 +50,4 @@
 (depends-on "xclip")
 (depends-on "whitespace")
 (depends-on "coffee-mode")
+(depends-on "elixir-mode")
