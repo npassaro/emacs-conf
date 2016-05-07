@@ -80,7 +80,7 @@
  '(default ((t (:family "Monaco" :foundry "unknown" :slant normal :weight normal :height 98 :width normal)))))
 
 
-
+;; HELM =========================
 (require 'helm)
 (require 'helm-config)
 
@@ -104,8 +104,10 @@
       helm-ff-file-name-history-use-recentf t)
 
 (helm-mode 1)
+(global-set-key (kbd "M-x") 'helm-M-x)
 
 
+;; PROJECTILE ====================
 (projectile-global-mode)
 (add-hook 'projectile-mode-hook 'projectile-rails-on)
 ;;(setq projectile-rails-keymap-prefix (kbd "C-c p C-r"))
