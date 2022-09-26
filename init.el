@@ -443,7 +443,7 @@
  '(helm-completion-style 'helm)
  '(org-agenda-files '("/Users/npassaro/projects/org"))
  '(package-selected-packages
-   '(dired-hide-dotfiles dired-open all-the-icons-dired dired-single helpful ivy-prescient counsel ivy-rich ivy editorconfig ag web-mode diff-hl git-gutter-fringe git-gutter logview emojify projectile-rails rjsx-mode projectile exec-path-from-shell lsp-ui company lsp-mode typescript-mode xclip yaml-mode org-bullets helm color-theme-sanityinc-tomorrow magit))
+   '(neotree dired-hide-dotfiles dired-open all-the-icons-dired dired-single helpful ivy-prescient counsel ivy-rich ivy editorconfig ag web-mode diff-hl git-gutter-fringe git-gutter logview emojify projectile-rails rjsx-mode projectile exec-path-from-shell lsp-ui company lsp-mode typescript-mode xclip yaml-mode org-bullets helm color-theme-sanityinc-tomorrow magit))
  '(show-paren-mode t)
  '(vc-annotate-background nil)
  '(vc-annotate-color-map
