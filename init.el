@@ -31,8 +31,11 @@
 (setq initial-scratch-message nil)
 (setq backup-directory-alist `(("." . "~/.saves")))
 (setq mac-option-key-is-meta t
-      mac-right-option-modifier nil
-      x-select-enable-clipboard t)
+      mac-option-modifier 'meta
+      ns-option-modifier 'meta
+      mac-right-option-modifier 'none
+      x-select-enable-clipboard t
+      ns-right-option-modifier 'none)
 
 (set-fringe-mode 10)
 
