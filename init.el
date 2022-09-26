@@ -410,6 +410,11 @@
    (getenv "PATH")))
 (setq exec-path (append `(,brew-bin-path) exec-path))
 
+(use-package markdown-mode
+  :ensure t
+  :mode ("README\\.md\\'" . gfm-mode)
+  :init (setq markdown-command "multimarkdown"))
+
 ;; LANG
 (set-language-environment "UTF-8")
 
