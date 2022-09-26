@@ -403,9 +403,12 @@
   ("C-c C-n" . neotree-toggle))
 
 ;; set env vars from shell
-;;(when (or (memq window-system '(mac ns x)) (daemonp))
-;;  (exec-path-from-shell-initialize))
-
+(setq brew-bin-path "/usr/local/bin")
+(setenv "PATH"
+  (concat
+   brew-bin-path ":"
+   (getenv "PATH")))
+(setq exec-path (append `(,brew-bin-path) exec-path))
 
 ;; LANG
 (set-language-environment "UTF-8")
