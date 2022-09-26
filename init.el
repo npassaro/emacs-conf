@@ -20,7 +20,7 @@
 (defvar efs/default-variable-font-size 180)
 
 ;; Make frame transparency overridable
-(defvar efs/frame-transparency '(100 . 70))
+(defvar efs/frame-transparency '(100 . 100))
 ;; E - Defaults
 ;;;;;;;;;;;;;;;;;;;;;;
 
