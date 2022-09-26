@@ -398,6 +398,9 @@
   (setq dired-open-extensions '(("png" . "feh")
                                 ("mkv" . "mpv"))))
 
+(use-package neotree
+  :bind
+  ("C-c C-n" . neotree-toggle))
 
 ;; set env vars from shell
 ;;(when (or (memq window-system '(mac ns x)) (daemonp))
